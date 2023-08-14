@@ -15,10 +15,30 @@ button {
   font-size: 1.5rem;
 }
 
-span, p, a {
-  font-size: 1.3rem;
+span, a {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1.5rem;
 }
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.6rem;
 }/*# sourceMappingURL=typography.css.map */
