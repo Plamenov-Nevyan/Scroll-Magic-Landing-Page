@@ -248,7 +248,14 @@ main {
                 align-items: center;
                 border-right: 2px solid steelblue;
                 border-bottom: 2px solid steelblue;
+                .image-holder.fade-in {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
                 .image-holder {
+                    opacity: 0;
+                    transform: translateY(50px);
+                    transition: all 1s ease-out;
                     max-width: 70%;
                     img {
                         width: 100%;
@@ -278,7 +285,14 @@ main {
                 align-items: center;
                 padding: 1em;
                 border-bottom: 2px solid steelblue;
+                .image-holder.fade-in {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
                 .image-holder {
+                    opacity: 0;
+                    transform: translateY(50px);
+                    transition: all 1s ease-out;
                     max-width: 70%;
                     img {
                         width: 100%;
@@ -297,7 +311,14 @@ main {
                 flex-direction: column;
                 gap: 3em;
                 align-items: center;
+                .image-holder.fade-in {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
                 .image-holder {
+                    opacity: 0;
+                    transform: translateY(50px);
+                    transition: all 1s ease-out;
                     max-width: 70%;
                     img {
                         width: 100%;
@@ -314,6 +335,8 @@ main {
         }
     }
 }
+
+
 
 footer {
     display: flex;
