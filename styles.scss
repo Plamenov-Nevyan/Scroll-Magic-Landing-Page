@@ -1,0 +1,46 @@
+header {
+    padding: 1em;
+    nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            li {
+                display: flex;
+                gap: .1em;
+                justify-content: center;
+                flex: 1 1 33%;
+                align-items: center;
+                svg {
+                    max-width: 60%;
+                    max-height: 5em;
+                }
+            }
+            li:nth-child(2){
+                svg {
+                    max-width: 20%;
+                }
+                svg:hover {
+                    fill: rgb(232, 232, 255);
+                }
+                span:last-child{
+                    font-weight: bold;
+                }
+            }
+            li:last-child {
+                 button {
+                    background-color: red;
+                    padding: 1em;
+                    border: none;
+                    border-radius: 2em;
+                    color: azure;
+                    font-weight: bold;
+                    cursor: pointer;
+                 }
+                 button:hover {
+                    background-color: rgb(169, 0, 0);
+                 }
+            }
+        }
+    }
+}

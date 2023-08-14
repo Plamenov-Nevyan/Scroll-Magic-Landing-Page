@@ -1,0 +1,40 @@
+header {
+  padding: 1em;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  display: flex;
+  gap: 0.1em;
+  justify-content: center;
+  flex: 1 1 33%;
+  align-items: center;
+}
+header nav ul li svg {
+  max-width: 60%;
+  max-height: 5em;
+}
+header nav ul li:nth-child(2) svg {
+  max-width: 20%;
+}
+header nav ul li:nth-child(2) svg:hover {
+  fill: rgb(232, 232, 255);
+}
+header nav ul li:nth-child(2) span:last-child {
+  font-weight: bold;
+}
+header nav ul li:last-child button {
+  background-color: red;
+  padding: 1em;
+  border: none;
+  border-radius: 2em;
+  color: azure;
+  font-weight: bold;
+  cursor: pointer;
+}
+header nav ul li:last-child button:hover {
+  background-color: rgb(169, 0, 0);
+}/*# sourceMappingURL=styles.css.map */
