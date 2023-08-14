@@ -4,10 +4,12 @@ body {
 
 header {
     padding: 1em;
-    height: 20svh;
+    height: 15svh;
     position: sticky;
     background-color: white;
     top: 0;
+    transition: all .5s ease-in;
+    z-index: 1;
     nav {
         ul {
             list-style-type: none;
@@ -53,6 +55,21 @@ header {
     }
 }
 
+header.bg-blue {
+    background-color: rgb(147, 147, 212);
+    opacity: .6;
+}
+
+header.bg-green {
+    background-color: rgb(142, 231, 10);
+    opacity: .6;
+}
+
+header.bg-gradient {
+    background-color: #FAD961;
+    background-image: linear-gradient(270deg, #FAD961 0%, #F76B1C 100%);
+}
+
 main {
     .advert-section-1 {
         min-height: 60svh;
@@ -96,9 +113,10 @@ main {
         flex-direction: column;
         gap: 2em;
         align-items: center;
-            h2{
+            .scrollmagic-pin-spacer > h3{
                 text-align: center;
-                max-width: 90%;
+                width: 90% !important;
+                left: 0 !important;
             }
             .sponsor-articles {
                 display: flex;
