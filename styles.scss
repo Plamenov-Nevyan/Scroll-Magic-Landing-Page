@@ -196,4 +196,176 @@ main {
             }
         }
     }
+    .sections-divider {
+        width: 100%;
+        height: .3em;
+        background-color: #D8DBDE;
+    }
+    .details-section {
+        display: flex;
+        padding: 2em;
+        justify-content: center;
+        align-items: center;
+        .details-left {
+            flex: 1 1 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            .article-left-top {
+                display: flex;
+                flex-direction: column;
+                gap: 3em;
+                align-items: center;
+                border-bottom: 2px solid steelblue;
+                border-right: 2px solid steelblue;
+                h3 {
+                    max-width: 53%;
+                    text-align: center;
+                    span {
+                        font-size: clamp(2.7rem, 3rem, 3.5rem);
+                        color: crimson;
+                    }
+                }
+                p {
+                    max-width: 70%;
+                    text-align: left;
+                }
+            }
+            .article-left-bottom {
+                display: flex;
+                flex-direction: column;
+                gap: 3em;
+                align-items: center;
+                border-right: 2px solid steelblue;
+                border-bottom: 2px solid steelblue;
+                .image-holder {
+                    max-width: 70%;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .text {
+                    max-width: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1em;
+                }
+            }
+        }
+        .details-right {
+            flex: 1 1 50%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            margin-top: 15em;
+            .article-right-top{
+                display: flex;
+                flex-direction: column;
+                gap: 3em;
+                align-items: center;
+                padding: 1em;
+                border-bottom: 2px solid steelblue;
+                .image-holder {
+                    max-width: 70%;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .text {
+                    max-width: 75%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1em;
+                }
+            }
+            .article-right-bottom {
+                display: flex;
+                flex-direction: column;
+                gap: 3em;
+                align-items: center;
+                .image-holder {
+                    max-width: 70%;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .text {
+                    max-width: 75%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1em;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(60, 58, 58);
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em;
+        .top-left {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 50%;
+            svg {
+                max-width: 20em;
+                height: auto;
+                fill: azure;
+            }
+            p{
+                color: azure;
+            }
+        }
+        .top-right {
+            display: flex;
+            gap: 1em;
+            justify-content: flex-start;
+            flex: 1 1 50%;
+            align-items: center;
+            svg {
+                flex: 1 1 33%;
+                fill: azure;
+            }
+        }
+    }
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em;
+        .bottom-left {
+            flex: 1 1 50%;
+            span {
+                color: azure;
+            }
+        }
+        .bottom-right {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            align-items: center;
+            flex: 1 1 50%;
+            svg {
+                max-width: 3em;
+                max-height: 3em;
+                height: 3em;
+                width: 3em;
+                fill: #f0ffff;
+            }
+            span {
+                color: azure;
+            }
+        }
+    }
 }

@@ -185,4 +185,176 @@ main .about-section .about-article-right .workforce-list #see-more a svg {
   max-width: 2em;
   max-height: 2em;
   fill: orangered;
+}
+main .sections-divider {
+  width: 100%;
+  height: 0.3em;
+  background-color: #D8DBDE;
+}
+main .details-section {
+  display: flex;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+}
+main .details-section .details-left {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .details-section .details-left .article-left-top {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: center;
+  border-bottom: 2px solid steelblue;
+  border-right: 2px solid steelblue;
+}
+main .details-section .details-left .article-left-top h3 {
+  max-width: 53%;
+  text-align: center;
+}
+main .details-section .details-left .article-left-top h3 span {
+  font-size: 3rem;
+  color: crimson;
+}
+main .details-section .details-left .article-left-top p {
+  max-width: 70%;
+  text-align: left;
+}
+main .details-section .details-left .article-left-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: center;
+  border-right: 2px solid steelblue;
+  border-bottom: 2px solid steelblue;
+}
+main .details-section .details-left .article-left-bottom .image-holder {
+  max-width: 70%;
+}
+main .details-section .details-left .article-left-bottom .image-holder img {
+  width: 100%;
+  height: auto;
+}
+main .details-section .details-left .article-left-bottom .text {
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .details-section .details-right {
+  flex: 1 1 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 15em;
+}
+main .details-section .details-right .article-right-top {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: center;
+  padding: 1em;
+  border-bottom: 2px solid steelblue;
+}
+main .details-section .details-right .article-right-top .image-holder {
+  max-width: 70%;
+}
+main .details-section .details-right .article-right-top .image-holder img {
+  width: 100%;
+  height: auto;
+}
+main .details-section .details-right .article-right-top .text {
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .details-section .details-right .article-right-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: center;
+}
+main .details-section .details-right .article-right-bottom .image-holder {
+  max-width: 70%;
+}
+main .details-section .details-right .article-right-bottom .image-holder img {
+  width: 100%;
+  height: auto;
+}
+main .details-section .details-right .article-right-bottom .text {
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(60, 58, 58);
+}
+footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+footer .footer-top .top-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+}
+footer .footer-top .top-left svg {
+  max-width: 20em;
+  height: auto;
+  fill: azure;
+}
+footer .footer-top .top-left p {
+  color: azure;
+}
+footer .footer-top .top-right {
+  display: flex;
+  gap: 1em;
+  justify-content: flex-start;
+  flex: 1 1 50%;
+  align-items: center;
+}
+footer .footer-top .top-right svg {
+  flex: 1 1 33%;
+  fill: azure;
+}
+footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+footer .footer-bottom .bottom-left {
+  flex: 1 1 50%;
+}
+footer .footer-bottom .bottom-left span {
+  color: azure;
+}
+footer .footer-bottom .bottom-right {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  align-items: center;
+  flex: 1 1 50%;
+}
+footer .footer-bottom .bottom-right svg {
+  max-width: 3em;
+  max-height: 3em;
+  height: 3em;
+  width: 3em;
+  fill: #f0ffff;
+}
+footer .footer-bottom .bottom-right span {
+  color: azure;
 }/*# sourceMappingURL=styles.css.map */
