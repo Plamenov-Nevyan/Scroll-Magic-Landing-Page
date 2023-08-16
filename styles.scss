@@ -1,26 +1,70 @@
-body {
-    // height: 100vh;
-}
+@import "./_breakpoints.scss" ;
+
+// body {
+//     // height: 100vh;
+// }
 
 header {
     padding: 1em;
-    height: 15svh;
+    min-height: 15svh;
     position: sticky;
     background-color: white;
     top: 0;
     transition: all .5s ease-in;
+    @include md {
+        display:  flex;
+        flex-wrap: wrap;
+    }
     z-index: 1;
+    #showNav {
+        display: none;
+    }
+    .bars-icon {
+        display: none;
+        svg {
+            max-width: 3em;
+            max-height: 3em;
+        }
+        @include md {
+            display: block;
+            min-width: 3em;
+            min-height: 3em;
+            flex: 1 1 100%;
+            order: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    @include md {
+        input[type="checkbox"]:checked + nav {
+            display: block;
+        }
+    }
+
     nav {
+        @include md {
+            display: none;
+            order: 2;
+        }
         ul {
             list-style-type: none;
             display: flex;
             justify-content: space-between;
+            @include md {
+                flex-direction: column;
+                align-items: center;
+                gap: 2em;
+            }
             li {
                 display: flex;
                 gap: .1em;
                 justify-content: center;
                 flex: 1 1 33%;
                 align-items: center;
+                @include md {
+                    min-width: 100%;
+                }
                 svg {
                     max-width: 60%;
                     max-height: 5em;
@@ -92,7 +136,7 @@ main {
             display: flex;
             justify-content: center;
             h1{
-                max-width: 50%;
+                max-width: 90%;
                 text-align: center;
             }
         }
@@ -164,8 +208,14 @@ main {
         min-height: 70svh;
         align-items: baseline;
         padding: 2em;
+        @include lg {
+            flex-wrap: wrap;
+        }
         .about-article-left {
             flex: 1 1 50%;
+            @include lg {
+                flex: 1 1 100%;
+            }
             display: flex;
             flex-direction: column;
             gap: 5em;
@@ -190,16 +240,34 @@ main {
         }
         .about-article-right {
             flex: 1 1 50%;
+            @include lg {
+                flex: 1 1 100%;
+                gap: 2em;
+            }
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 1em;
-            gap: 5em;
+            gap: 9em;
+           .workforce-list.workforce-list-scale {
+                transform: scale(1.5);
+                background-color: #D8DBDE;
+                transition: transform 0.5s ease-in-out;
+            }
             .workforce-list {
                 list-style-type: none;
                 display: flex;
                 flex-direction: column;
+                max-width: 50%;
+                padding: 1em;
+                border-radius: .6em;
+                align-items: center;
                 gap: 1em;
+                transform: scale(1);
+                transition: transform 0.5s ease-in-out;
+                @include md {
+                    max-width: 90% ;
+                }
                 li {
                     display: flex;
                     align-items: center;
@@ -234,11 +302,17 @@ main {
         padding: 2em;
         justify-content: center;
         align-items: center;
+        @include md {
+            flex-direction: column;
+        }
         .details-left {
             flex: 1 1 50%;
             display: flex;
             flex-direction: column;
             gap: 1em;
+            @include md {
+                min-width: 90%;
+            }
             .article-left-top {
                 display: flex;
                 flex-direction: column;
@@ -246,9 +320,17 @@ main {
                 align-items: center;
                 border-bottom: 2px solid steelblue;
                 border-right: 2px solid steelblue;
+                @include md {
+                    min-width: 100%;
+                    border-bottom: 2px solid steelblue;
+                    border-right: none;
+                }
                 h3 {
                     max-width: 53%;
                     text-align: center;
+                    @include md {
+                        max-width: 90%;
+                    }
                     span {
                         font-size: clamp(2.7rem, 3rem, 3.5rem);
                         color: crimson;
@@ -266,6 +348,9 @@ main {
                 align-items: center;
                 border-right: 2px solid steelblue;
                 border-bottom: 2px solid steelblue;
+                @include md {
+                    border-right: none;
+                }
                 .image-holder.fade-in {
                     opacity: 1;
                     transform: translateY(0);
@@ -275,6 +360,10 @@ main {
                     transform: translateY(50px);
                     transition: all 1s ease-out;
                     max-width: 70%;
+                    @include md {
+                        max-width: 90%;
+                        padding-bottom: 1em;
+                    }
                     img {
                         width: 100%;
                         height: auto;
@@ -282,6 +371,9 @@ main {
                 }
                 .text {
                     max-width: 70%;
+                    @include md {
+                        max-width: 90%;
+                    }
                     display: flex;
                     flex-direction: column;
                     gap: 1em;
@@ -296,6 +388,9 @@ main {
             flex-direction: column;
             gap: 1em;
             margin-top: 15em;
+            @include md {
+                margin-top: 2.2em;
+            }
             .article-right-top{
                 display: flex;
                 flex-direction: column;
@@ -312,6 +407,9 @@ main {
                     transform: translateY(50px);
                     transition: all 1s ease-out;
                     max-width: 70%;
+                    @include md {
+                        max-width: 90%;
+                    }
                     img {
                         width: 100%;
                         height: auto;
@@ -322,6 +420,9 @@ main {
                     display: flex;
                     flex-direction: column;
                     gap: 1em;
+                    @include md {
+                        max-width: 90%;
+                    }
                 }
             }
             .article-right-bottom {
@@ -338,6 +439,9 @@ main {
                     transform: translateY(50px);
                     transition: all 1s ease-out;
                     max-width: 70%;
+                    @include md {
+                        max-width: 90%;
+                    }
                     img {
                         width: 100%;
                         height: auto;
@@ -348,12 +452,13 @@ main {
                     display: flex;
                     flex-direction: column;
                     gap: 1em;
+                    @include md {
+                        max-width: 90%;
+                    }
                 }
             }
         }
     }
-}
-
 
 
 footer {
@@ -384,9 +489,15 @@ footer {
             justify-content: flex-start;
             flex: 1 1 50%;
             align-items: center;
+            @include md {
+                flex-direction: column;
+            }
             svg {
                 flex: 1 1 33%;
                 fill: azure;
+                @include md {
+                    flex: 0 1 20%;
+                }
             }
         }
     }
@@ -419,4 +530,5 @@ footer {
             }
         }
     }
+  }
 }
